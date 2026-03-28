@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direccion de Formacion</title>
+    <title>Direccion de Formacion - Nueva Solicitud</title>
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <link href="asset/css/bootstrap-icons.min.css" rel="stylesheet">
     <link href="asset/css/style.css" rel="stylesheet">
@@ -19,7 +19,7 @@
             </div>
             <ul class="nav flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
+                    <a href="index.html" class="nav-link">
                         <i class="bi bi-house-door"></i> Inicio
                     </a>
                 </li>
@@ -46,16 +46,16 @@
                     <div class="accordion sidebar-accordion" id="accordionSolicitudes">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSolicitudes">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSolicitudes" aria-expanded="false" aria-controls="collapseSolicitudes">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSolicitudes" aria-expanded="true" aria-controls="collapseSolicitudes">
                                     <i class="bi bi-file-earmark-text me-2"></i> Solicitudes
                                 </button>
                             </h2>
-                            <div id="collapseSolicitudes" class="accordion-collapse collapse" aria-labelledby="headingSolicitudes"
+                            <div id="collapseSolicitudes" class="accordion-collapse collapse show" aria-labelledby="headingSolicitudes"
                                 data-bs-parent="#accordionSolicitudes">
                                 <div class="accordion-body p-0">
                                     <a href="solicitudes.html" class="nav-link py-2 ps-5 small">Ver Solicitudes</a>
-                                    <a href="nueva_solicitud.html" class="nav-link py-2 ps-5 small">Nueva Solicitud</a>
+                                    <a href="nueva_solicitud.html" class="nav-link py-2 ps-5 small active">Nueva Solicitud</a>
                                     <a href="historial_solicitudes.html" class="nav-link py-2 ps-5 small">Historial de Solicitudes</a>
                                 </div>
                             </div>
@@ -141,13 +141,11 @@
                     </div>
                 </li>
             </ul>
-            <button class="btn btn-outline-danger p-0 ms-3 mt-3">
-                <a href=" #" class="nav-link ">
+            <button class="btn btn-outline-danger p-0 ms-3 mt-3 mb-4">
+                <a href="#" class="nav-link text-danger border-0 w-100 h-100 justify-content-center">
                     <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
                 </a>
             </button>
-
-
         </nav>
 
         <div class="content-area">
@@ -163,7 +161,7 @@
                                 <i class="bi bi-search text-muted"></i>
                             </span>
                             <input class="form-control border-start-0 ps-0" type="search"
-                                placeholder="Buscar prácticas, insumos..." aria-label="Search">
+                                placeholder="..." aria-label="Search">
                         </div>
                     </form>
 
@@ -173,7 +171,7 @@
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                                 style="font-size: 0.6rem;">
-                                2
+                                8
                             </span>
                         </div>
                         <div class="dropdown">
@@ -197,132 +195,71 @@
             </nav>
 
             <div class="container-fluid p-4">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h2 class="h4">Resumen Operativo</h2>
-
-                </div>
-                <div class="mb-4"></div>
-
-                <div class="row g-4 mb-4">
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow-sm border-start border-4 border-warning h-100">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="bg-warning bg-opacity-10 text-warning p-2 rounded-circle me-3">
-                                        <i class="bi bi-exclamation-octagon fs-4"></i>
-                                    </div>
-                                    <h6 class="text-muted small text-uppercase mb-0">Alertas de Choques</h6>
-                                </div>
-                                <h3 class="mb-1 text-warning">2 Detectadas</h3>
-                                <p class="mb-0 small text-muted">Conflictos en Salón B-12 para hoy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow-sm border-start border-4 border-danger h-100">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="bg-danger bg-opacity-10 text-danger p-2 rounded-circle me-3">
-                                        <i class="bi bi-box-seam fs-4"></i>
-                                    </div>
-                                    <h6 class="text-muted small text-uppercase mb-0">Insumos Críticos</h6>
-                                </div>
-                                <h3 class="mb-1 text-danger">5 Items</h3>
-                                <p class="mb-0 small text-muted">Reactivos por agotarse esta semana</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow-sm border-start border-4 border-primary h-100">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="bg-primary bg-opacity-10 text-primary p-2 rounded-circle me-3">
-                                        <i class="bi bi-file-earmark-plus fs-4"></i>
-                                    </div>
-                                    <h6 class="text-muted small text-uppercase mb-0">Solicitudes Pendientes</h6>
-                                </div>
-                                <h3 class="mb-1 text-primary">8 Nuevas</h3>
-                                <p class="mb-0 small text-muted">Docentes solicitando laboratorios</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="h4 mb-0">Nueva Solicitud de Práctica</h2>
+                    <a href="solicitudes.html" class="btn btn-outline-secondary d-flex align-items-center gap-2">
+                        <i class="bi bi-arrow-left"></i>
+                        <span>Volver a Solicitudes</span>
+                    </a>
                 </div>
 
-                <div class="row g-4">
-                    <div class="col-lg-8">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-header bg-white py-3 border-0">
-                                <h5 class="card-title mb-0">Próximas Prácticas (Anticipación 15 días)</h5>
-                            </div>
-                            <div class="table-responsive px-3">
-                                <table class="table table-hover align-middle">
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th>Fecha</th>
-                                            <th>Docente</th>
-                                            <th>Laboratorio</th>
-                                            <th>Estado</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>10 Abr 2026</td>
-                                            <td>Prof. Ricardo Silva</td>
-                                            <td>Procesos Químicos</td>
-                                            <td><span class="badge bg-info bg-opacity-10 text-info">En
-                                                    Verificación</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12 Abr 2026</td>
-                                            <td>Dra. Elena Ramos</td>
-                                            <td>Higiene y Cont. Amb.</td>
-                                            <td><span
-                                                    class="badge bg-success bg-opacity-10 text-success">Aprobada</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>15 Abr 2026</td>
-                                            <td>Ing. Carlos Mena</td>
-                                            <td>Física Aplicada</td>
-                                            <td><span
-                                                    class="badge bg-warning bg-opacity-10 text-warning">Pendiente</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="card-footer bg-white border-0 text-center py-3">
-                                <a href="#" class="text-decoration-none small">Ver todas las solicitudes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="card-header bg-white py-3 border-0">
-                                <h5 class="card-title mb-0 text-danger"><i
-                                        class="bi bi-exclamation-triangle-fill me-2"></i>Alertas Críticas</h5>
-                            </div>
-                            <div class="card-body pt-0">
-                                <div class="list-group list-group-flush">
-                                    <div class="list-group-item border-0 px-0">
-                                        <div class="d-flex w-100 justify-content-between align-items-center">
-                                            <h6 class="mb-1 fw-bold text-dark">Choque de Horario</h6>
-                                            <span class="badge bg-danger">Hoy</span>
-                                        </div>
-                                        <p class="mb-1 text-muted small">Lab. de PNF en Higiene ocupado por Prof.
-                                            Martínez
-                                            (14:00 - 16:00).</p>
-                                    </div>
-                                    <div class="list-group-item border-0 px-0">
-                                        <div class="d-flex w-100 justify-content-between align-items-center">
-                                            <h6 class="mb-1 fw-bold text-dark">Stock Bajo</h6>
-                                            <span class="badge bg-warning text-dark">Alerta</span>
-                                        </div>
-                                        <p class="mb-1 text-muted small">Ácido Clorhídrico disponible solo 500ml.</p>
-                                    </div>
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 p-md-5">
+                        <form>
+                            <h5 class="fw-bold mb-4 text-primary border-bottom pb-2">Información General</h5>
+                            <div class="row g-4 mb-5">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold text-secondary">Asignatura / Práctica <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg bg-light" placeholder="Ej. Titulación Ácido-Base">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label fw-semibold text-secondary">Sección <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg bg-light" placeholder="Ej. 2101">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label fw-semibold text-secondary">Estudiantes Totales</label>
+                                    <input type="number" class="form-control form-control-lg bg-light" placeholder="0" min="1">
                                 </div>
                             </div>
-                        </div>
+                            
+                            <h5 class="fw-bold mb-4 text-primary border-bottom pb-2">Espacio y Horario</h5>
+                            <div class="row g-4 mb-5">
+                                <div class="col-md-5">
+                                    <label class="form-label fw-semibold text-secondary">Laboratorio Requerido <span class="text-danger">*</span></label>
+                                    <select class="form-select form-select-lg bg-light">
+                                        <option selected disabled>Seleccione un laboratorio...</option>
+                                        <option>Lab. de Química A-01</option>
+                                        <option>Lab. de Biología B-02</option>
+                                        <option>Lab. de Informática C-01</option>
+                                        <option>Lab. Seguridad S-01</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label fw-semibold text-secondary">Fecha Propuesta <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control form-control-lg bg-light">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label fw-semibold text-secondary">Hora Inicio</label>
+                                    <input type="time" class="form-control form-control-lg bg-light">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label fw-semibold text-secondary">Hora Fin</label>
+                                    <input type="time" class="form-control form-control-lg bg-light">
+                                </div>
+                            </div>
+
+                            <h5 class="fw-bold mb-4 text-primary border-bottom pb-2">Requerimientos Técnicos y Materiales</h5>
+                            <div class="mb-5">
+                                <label class="form-label fw-semibold text-secondary">Insumos y Reactivos</label>
+                                <textarea class="form-control bg-light" rows="4" placeholder="Ej. 100ml de Ácido Clorhídrico (0.1M), 5 Matraces de Erlenmeyer de 250ml..."></textarea>
+                                <div class="form-text mt-2"><i class="bi bi-info-circle text-primary me-1"></i>Detalla cantidades y especificaciones de todo el material necesario para prevenir falta de stock.</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-end gap-3 pt-3 border-top">
+                                <button type="button" class="btn btn-light px-4 py-2 fw-semibold">Cancelar</button>
+                                <button type="submit" class="btn btn-primary px-5 py-2 fw-semibold shadow-sm d-flex justify-content-center align-items-center"><i class="bi bi-send-fill me-2"></i> Enviar Solicitud</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -333,7 +270,6 @@
     <script>
         const sidebarCollapse = document.getElementById('sidebarCollapse');
         const sidebar = document.getElementById('sidebar');
-        const contentArea = document.querySelector('.content-area');
 
         sidebarCollapse.addEventListener('click', (e) => {
             e.stopPropagation();

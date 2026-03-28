@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direccion de Formacion - Movimientos Insumos</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <nav id="sidebar" class="flex-column">
+            <div class="logo_UPTAEB p-4 fs-4 fw-bold border-bottom border-secondary mb-3">
+                <img src="asset/img/1.jpg" alt="">
+            </div>
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li class="nav-item">
+                    <div class="accordion sidebar-accordion" id="accordionUsuarios">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingUsuarios"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsuarios" aria-expanded="false"><i class="bi bi-people me-2"></i> Usuarios</button></h2>
+                            <div id="collapseUsuarios" class="accordion-collapse collapse" data-bs-parent="#accordionUsuarios">
+                                <div class="accordion-body p-0">
+                                    <a href="#" class="nav-link py-2 ps-5 small">Gestión de Usuarios</a>
+                                    <a href="#" class="nav-link py-2 ps-5 small">Roles y Permisos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="accordion sidebar-accordion" id="accordionSolicitudes">
+                        <div class="accordion-item"><h2 class="accordion-header" id="headingSolicitudes"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolicitudes"><i class="bi bi-file-earmark-text me-2"></i> Solicitudes</button></h2>
+                            <div id="collapseSolicitudes" class="accordion-collapse collapse" data-bs-parent="#accordionSolicitudes">
+                                <div class="accordion-body p-0">
+                                    <a href="solicitudes.html" class="nav-link py-2 ps-5 small">Ver Solicitudes</a>
+                                    <a href="nueva_solicitud.html" class="nav-link py-2 ps-5 small">Nueva Solicitud</a>
+                                    <a href="historial_solicitudes.html" class="nav-link py-2 ps-5 small">Historial de Solicitudes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="accordion sidebar-accordion" id="accordionLaboratorios">
+                        <div class="accordion-item"><h2 class="accordion-header" id="headingLaboratorios"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLaboratorios"><i class="bi bi-journal-text me-2"></i> Laboratorios</button></h2>
+                            <div id="collapseLaboratorios" class="accordion-collapse collapse" data-bs-parent="#accordionLaboratorios">
+                                <div class="accordion-body p-0">
+                                    <a href="laboratorios.html" class="nav-link py-2 ps-5 small">Resumen de Espacios</a>
+                                    <a href="mantenimiento_labs.html" class="nav-link py-2 ps-5 small">Gestión de Mantenimiento</a>
+                                    <a href="protocolos_labs.html" class="nav-link py-2 ps-5 small">Protocolos de Seguridad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="accordion sidebar-accordion" id="accordionInsumos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingInsumos">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInsumos" aria-expanded="true" aria-controls="collapseInsumos">
+                                    <i class="bi bi-box-seam me-2"></i> Insumos
+                                </button>
+                            </h2>
+                            <div id="collapseInsumos" class="accordion-collapse collapse show" aria-labelledby="headingInsumos"
+                                data-bs-parent="#accordionInsumos">
+                                <div class="accordion-body p-0">
+                                    <a href="inventario_general.html" class="nav-link py-2 ps-5 small">Inventario General</a>
+                                    <a href="movimientos_insumos.html" class="nav-link py-2 ps-5 small active">Movimientos (Entradas/Salidas)</a>
+                                    <a href="alertas_stock.html" class="nav-link py-2 ps-5 small">Alertas de Stock</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="accordion sidebar-accordion" id="accordionHorarios">
+                        <!-- Removed content exactly as above minus show, matching others exactly -->
+                        <div class="accordion-item"><h2 class="accordion-header" id="headingHorarios"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHorarios"><i class="bi bi-calendar3 me-2"></i> Horarios</button></h2>
+                            <div id="collapseHorarios" class="accordion-collapse collapse" data-bs-parent="#accordionHorarios">
+                                <div class="accordion-body p-0">
+                                    <a href="horarios.html" class="nav-link py-2 ps-5 small">Cronogramas Semanales</a><a href="#" class="nav-link py-2 ps-5 small">Conflictos y Soluciones</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="accordion sidebar-accordion" id="accordionReportes">
+                        <div class="accordion-item"><h2 class="accordion-header" id="headingReportes"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReportes"><i class="bi bi-graph-up me-2"></i> Reportes</button></h2>
+                            <div id="collapseReportes" class="accordion-collapse collapse" data-bs-parent="#accordionReportes">
+                                <div class="accordion-body p-0">
+                                    <a href="reportes.html" class="nav-link py-2 ps-5 small">Panel Estadístico</a><a href="generacion_reportes.html" class="nav-link py-2 ps-5 small">Generación de Reportes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-outline-danger p-0 ms-3 mt-3 mb-4"><a href="#" class="nav-link text-danger border-0 w-100 h-100 justify-content-center"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</a></button>
+        </nav>
+
+        <div class="content-area">
+            <nav class="navbar navbar-expand-lg top-navbar px-4 py-3 line-m">
+                <div class="container-fluid p-0">
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-dark me-4"><i class="bi bi-list"></i></button>
+                    <div class="ms-auto d-flex align-items-center">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                                <img src="https://ui-avatars.com/api/?name=Admin&background=0d6efd&color=fff" class="rounded-circle" width="32">
+                                <span>Direccion</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Salir</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="h4 mb-0">Control de Entradas y Salidas</h2>
+                        <p class="text-muted small">Registro del consumo y reposición de materiales del laboratorio</p>
+                    </div>
+                    <button class="btn btn-outline-primary bg-white d-flex align-items-center gap-2">
+                        <i class="bi bi-arrow-down-up"></i>
+                        <span>Generar Nuevo Movimiento</span>
+                    </button>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-white py-3 border-0 d-flex gap-2">
+                        <select class="form-select border-0 shadow-sm w-auto bg-light">
+                            <option selected>Mes Actual</option>
+                            <option>Mes Anterior</option>
+                        </select>
+                        <select class="form-select border-0 shadow-sm w-auto bg-light">
+                            <option selected>Todos los movimientos</option>
+                            <option>Solo Entradas (Asignaciones)</option>
+                            <option>Solo Salidas (Consumos)</option>
+                        </select>
+                    </div>
+                    <div class="table-responsive p-3">
+                        <table class="table align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Fecha y Hora</th>
+                                    <th>Tipo</th>
+                                    <th>Insumo Relacionado</th>
+                                    <th>Cantidad</th>
+                                    <th>Motivo / Práctica</th>
+                                    <th>Registrado por</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-muted"><i class="bi bi-calendar2-day me-2"></i>Hoy, 09:30 AM</td>
+                                    <td><span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-2 py-1"><i class="bi bi-arrow-down-circle-fill me-1"></i>Salida (Uso)</span></td>
+                                    <td class="fw-semibold">Ácido Clorhídrico (0.1M)</td>
+                                    <td class="fw-bold text-danger">- 500 ml</td>
+                                    <td>Práctica: Titulación Ácido-Base (S-045)</td>
+                                    <td class="text-muted small">Téc. Manuel Rosa</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted"><i class="bi bi-calendar2-day me-2"></i>Ayer, 14:15 PM</td>
+                                    <td><span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1"><i class="bi bi-arrow-up-circle-fill me-1"></i>Entrada (Asignación)</span></td>
+                                    <td class="fw-semibold">Matraz Erlenmeyer 250ml</td>
+                                    <td class="fw-bold text-success">+ 20 Unidades</td>
+                                    <td>Reposición Anual Decanato de Ciencias</td>
+                                    <td class="text-muted small">Lic. Ana Rojas (Coord.)</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted"><i class="bi bi-calendar2-day me-2"></i>15 Mar 2026, 08:00 AM</td>
+                                    <td><span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-2 py-1"><i class="bi bi-x-circle-fill me-1"></i>Salida (Desecho)</span></td>
+                                    <td class="fw-semibold">Agar Nutritivo Vencido</td>
+                                    <td class="fw-bold text-danger">- 2 Cajas</td>
+                                    <td>Manejo de Desechos Biológicos (Norma P-01)</td>
+                                    <td class="text-muted small">Téc. Luis Pérez</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const sidebarCollapse = document.getElementById('sidebarCollapse');
+        const sidebar = document.getElementById('sidebar');
+
+        sidebarCollapse.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('active');
+            } else {
+                sidebar.classList.toggle('collapsed');
+            }
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!sidebar.contains(event.target) && !sidebarCollapse.contains(event.target) && window.innerWidth <= 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

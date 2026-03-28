@@ -54,16 +54,27 @@ body {
 }
 
 .sidebar-accordion .accordion-button {
-    background: #036ee3 !important;
-    color: #fff !important;
+    background: transparent;
+    color: #333;
     padding: 12px 20px;
     font-size: 1rem;
     box-shadow: none;
     border-radius: 0;
     gap: 12px;
+    transition: all 0.2s;
 }
 
-.sidebar-accordion .accordion-button::after {
+.sidebar-accordion .accordion-button:hover {
+    color: #025abb;
+    background-color: rgba(2, 90, 187, 0.05);
+}
+
+.sidebar-accordion .accordion-button:not(.collapsed) {
+    background: #036ee3 !important;
+    color: #fff !important;
+}
+
+.sidebar-accordion .accordion-button:not(.collapsed)::after {
     filter: invert(1) brightness(2);
 }
 
